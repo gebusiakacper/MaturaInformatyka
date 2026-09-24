@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informatyka Matura — prezentacje</title>
+  <style>
+    :root { --navy: #14213d; --blue: #2563eb; --light: #f4f7fb; --text: #1f2937; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; color: var(--text); background: var(--light); }
+    header { padding: 64px 20px 76px; color: white; text-align: center; background: linear-gradient(135deg, #14213d, #2563eb); }
+    header h1 { margin: 0 0 12px; font-size: clamp(2rem, 5vw, 3.5rem); }
+    header p { margin: 0; font-size: 1.15rem; opacity: .9; }
+    main { max-width: 1100px; margin: -35px auto 50px; padding: 0 20px; }
+    .intro, .card { background: white; border-radius: 14px; box-shadow: 0 8px 24px #14213d14; }
+    .intro { padding: 26px; margin-bottom: 30px; text-align: center; }
+    .intro h2 { margin-top: 0; }
+    .presentations { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .card { padding: 24px; border-top: 4px solid var(--blue); }
+    .card h3 { margin: 0 0 10px; color: var(--navy); }
+    .card p { min-height: 44px; color: #64748b; }
+    .button { display: inline-block; padding: 11px 16px; color: white; background: var(--blue); border-radius: 8px; text-decoration: none; font-weight: bold; }
+    .button:hover { background: #1d4ed8; }
+    footer { padding: 25px; color: #64748b; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Informatyka Matura</h1>
+    <p>Prezentacje i materiały pomocne w przygotowaniu do matury</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Wybierz temat</h2>
+      <p>Znajdziesz tutaj prezentacje z zajęć. Kliknij przycisk, aby otworzyć lub pobrać materiał.</p>
+    </section>
+
+    <section class="presentations">
+      <!-- Skopiuj kartę, aby dodać kolejną prezentację. Zmień href na plik PDF. -->
+      <article class="card">
+        <h3>Podstawy algorytmiki</h3>
+        <p>Wprowadzenie do algorytmów i sposobów ich zapisu.</p>
+        <a class="button" href="prezentacje/algorytmika.pdf" target="_blank">Otwórz prezentację</a>
+      </article>
+      <article class="card">
+        <h3>Bazy danych</h3>
+        <p>Relacyjne bazy danych, SQL i projektowanie tabel.</p>
+        <a class="button" href="prezentacje/bazy-danych.pdf" target="_blank">Otwórz prezentację</a>
+      </article>
+      <article class="card">
+        <h3>Sieci komputerowe</h3>
+        <p>Najważniejsze pojęcia dotyczące sieci i Internetu.</p>
+        <a class="button" href="prezentacje/sieci.pdf" target="_blank">Otwórz prezentację</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>© 2024 Informatyka Matura</footer>
+</body>
+</html>

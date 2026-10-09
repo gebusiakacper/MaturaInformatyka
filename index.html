@@ -7,7 +7,7 @@
   <style>
     :root { --navy: #14213d; --blue: #2563eb; --light: #f4f7fb; --text: #1f2937; }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: Arial, sans-serif; color: var(--text); background: var(--light); }
+    body { margin: 0; font-family: Arial, sans-serif; color: var(--text); background: var(--light); line-height: 1.4; }
     header { padding: 64px 20px 76px; color: white; text-align: center; background: linear-gradient(135deg, #14213d, #2563eb); }
     header h1 { margin: 0 0 12px; font-size: clamp(2rem, 5vw, 3.5rem); }
     header p { margin: 0; font-size: 1.15rem; opacity: .9; }
@@ -17,7 +17,26 @@
     .intro h2 { margin-top: 0; }
     .announcements { padding: 26px; margin-bottom: 30px; text-align: center; }
     .announcements h2 { margin-top: 0; }
-    .annnouncements .important { color: #991200; font-weight: bold; }
+    .announcements .important { color: #991200; font-weight: bold; }
+    .announcements details {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+
+.announcements summary {
+  cursor: pointer;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.announcements details[open] summary {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
     .presentations { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 20px; }
     .card { padding: 24px; border-top: 4px solid var(--blue); }
     .card h3 { margin: 0 0 10px; color: var(--navy); }
@@ -37,22 +56,51 @@
 
     <section class="announcements">
       <h2>Ogłoszenia</h2>
+
       <p class="important">
-        13 i 16 października tak jak wspominałem na zajęciach będziecie realizowali skrypty z Pythona. Na koniec zajęć wysyłacie mi wyniki pracy na maila zgodnie z instrukcją w kafelku.<br>
-        13 i 16 października nie będzie kartkówek. 20 października wracamy do normalnych zajęć i zaczynamy od kartkówki ze złożoności obliczeniowej i rekurencji. <br>
+          13 i 16 października tak jak wspominałem na zajęciach będziecie realizowali skrypty do zajęć z Pythona. Na koniec zajęć wysyłacie mi wyniki pracy na maila zgodnie z instrukcją w kafelku.<br>
+          13 i 16 października nie będzie kartkówek. 20 października wracamy do normalnych zajęć i zaczynamy od kartkówki ze złożoności obliczeniowej i rekurencji.
       </p>
+
+      <!-- Ogłoszenie 2: Olimpiada Informatyczna -->
+      <details class="announcement-item">
+        <summary><strong>XXXIV Olimpiada Informatyczna – I etap i informacje</strong></summary>
+        <p>
+          I etap <a href="https://www.oi.edu.pl/" target="_blank">Olimpiady Informatycznej</a> składa się z dwóch tur: tury zdalnej i tury szkolnej. Tura zdalna będzie trwała od 12 października do 16 listopada 2026 roku, uczestnicy samodzielnie będą rozwiązywali zadania on-line i przesyłali rozwiązania do organizatora. Tura szkolna polega na samodzielnym rozwiązywaniu zadań w szkole uczestników lub – jeśli to nie jest możliwe – w innym miejscu wskazanym przez Komitet.
+        </p>
+        <p>
+          Informacje na temat organizacji zawodów zamieszczone są w dokumentacji Olimpiady Informatycznej dostępnej na oficjalnej <a href="https://www.oi.edu.pl/" target="_blank">stronie Olimpiada Informatyczna</a>.
+        </p>
+        <p>
+          Zachęcamy do zapoznania się z oficjalnym <a href="https://www.oi.edu.pl/l/33oi_regulamin/" target="_blank">Regulaminem Olimpiady Informatycznej</a> oraz pobrania oficjalnego <a href="https://oi.edu.pl/media/attachment/20261007/plakat_XXXIV_OI.pdf" target="_blank">plakatu informacyjnego</a>.
+        </p>
+        <p>
+          Finaliści i laureaci Olimpiady są zwolnieni z egzaminu maturalnego z informatyki oraz mają wolny wstęp na informatykę i kierunki pokrewne na większości uczelni w Polsce. Laureaci zdobywają cenne nagrody, w tym wysokie stypendia ufundowane przez NASK.
+        </p>
+      </details>
+
+      <!-- Ogłoszenie 3: Projekt Ministerstwa Cyfryzacji -->
+      <details class="announcement-item">
+        <summary><strong>Projekt Mistrzostwa w Algorytmice i Programowaniu</strong></summary>
+        <p>
+          Projekt finansowany przez Ministerstwo Cyfryzacji pod nazwą „Mistrzostwa w Algorytmice i Programowaniu – Uczniowie”, którego celem jest rozwijanie kompetencji informatycznych młodzieży oraz wspieranie nauczycieli w przygotowywaniu uczniów do wyzwań związanych z algorytmiką, programowaniem oraz maturą z informatyki.
+        </p>
+        <p>
+          Więcej informacji o projekcie można znaleźć na oficjalnej stronie: <a href="https://www.map.org.pl" target="_blank">www.map.org.pl</a>.
+        </p>
+      </details>
     </section>
 
+
     <section class="intro">
-      <h2>Wybierz temat</h2>
-      <p>Znajdziesz tutaj prezentacje z zajęć. Kliknij przycisk, aby otworzyć lub pobrać materiał.</p>
+      <h2>Materiały do zajęć</h2>
+      <p>Znajdziecie tutaj prezentacje i skrypty do zajęć. Jeśli na lekcji wykorzystujemy dodatkowe pliki, będą one dostępne w kafelku odpowiadającym tematowi zajęć. Jeśli zapomniałem czegoś udostępnić piszcie śmiało na mojego maila <u>k.gebusia@uczelniakorczaka.pl</u></p>
       <p style="font-size: 1.15rem; color: #991200;">
         Pamiętajcie o regularnym powtarzaniu materiału!<br>
       </p>
     </section>
 
     
-
     <section class="presentations">
       <!-- Skopiuj kartę, aby dodać kolejną prezentację. Zmień href na plik PDF. -->
       <article class="card">

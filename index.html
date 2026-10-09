@@ -12,14 +12,16 @@
     header h1 { margin: 0 0 12px; font-size: clamp(2rem, 5vw, 3.5rem); }
     header p { margin: 0; font-size: 1.15rem; opacity: .9; }
     main { max-width: 1100px; margin: -35px auto 50px; padding: 0 20px; }
-    .intro, .card { background: white; border-radius: 14px; box-shadow: 0 8px 24px #14213d14; }
+    .intro, .announcements, .card { background: white; border-radius: 14px; box-shadow: 0 8px 24px #14213d14; }
     .intro { padding: 26px; margin-bottom: 30px; text-align: center; }
     .intro h2 { margin-top: 0; }
+    .announcements { padding: 26px; margin-bottom: 30px; text-align: center; }
+    .announcements h2 { margin-top: 0; }
     .presentations { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 20px; }
     .card { padding: 24px; border-top: 4px solid var(--blue); }
     .card h3 { margin: 0 0 10px; color: var(--navy); }
     .card p { min-height: 48px; color: #64748b; margin-bottom: 10px; }
-    .button { display: inline-block; padding: 11px 16px; margin: 10px 0 0; color: white; background: var(--blue); border-radius: 8px; text-decoration: none; font-weight: bold; }
+    .button { display: inline-block; width: 100%; padding: 11px 16px; margin: 10px 0 0; color: white; background: var(--blue); border-radius: 8px; text-decoration: none; font-weight: bold; }
     .button:hover { background: #1d4ed8; }
     footer { padding: 25px; color: #64748b; text-align: center; }
   </style>
@@ -36,6 +38,12 @@
       <p>Znajdziesz tutaj prezentacje z zajęć. Kliknij przycisk, aby otworzyć lub pobrać materiał.</p>
       <p style="font-size: 1.15rem; color: #991200;">
         Pamiętajcie o regularnym powtarzaniu materiału!<br>
+      </p>
+    </section>
+
+    <section class="announcements">
+      <h2>Ogłoszenia</h2>
+      <p>
         13 i 16 października tak jak wspominałem na zajęciach będziecie realizowali skrypty z Pythona. Na koniec zajęć wysyłacie mi wyniki pracy na maila zgodnie z instrukcją w kafelku.<br>
         13 i 16 października nie będzie kartkówek. 20 października wracamy do normalnych zajęć i zaczynamy od kartkówki ze złożoności obliczeniowej i rekurencji. <br>
       </p>

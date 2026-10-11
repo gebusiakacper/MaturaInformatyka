@@ -18,9 +18,11 @@
     .announcements { padding: 26px; margin-bottom: 30px; text-align: center; }
     .announcements h2 { margin-top: 0; }
     .announcements .important { color: #991200; font-weight: bold; }
+
     .announcements details {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
+  /* background: #f9f9f9; */
+  background: #e8f3ff;
+  border: 1px solid rgb(160, 176, 255);
   border-radius: 6px;
   padding: 10px 15px;
   margin-bottom: 10px;
@@ -41,7 +43,9 @@
     .card { padding: 24px; border-top: 4px solid var(--blue); }
     .card h3 { margin: 0 0 10px; color: var(--navy); }
     .card p { min-height: 48px; color: #64748b; margin-bottom: 10px; }
-    .button { display: inline-block; width: 100%; padding: 11px 16px; margin: 10px 0 0; color: white; background: var(--blue); border-radius: 8px; text-decoration: none; font-weight: bold; }
+    .card summary { cursor: pointer; color: var(--blue); font-weight: bold; margin-top: 10px; border-top: 1px solid #ddd; padding-top: 8px; }
+    .card details p { margin: 5px 0 0 0; min-height: 0;}
+    .button { display: inline-block; width: 100%; text-align: center; padding: 11px 16px; margin: 10px 0 0; color: white; background: var(--blue); border-radius: 8px; text-decoration: none; font-weight: bold; }
     .button:hover { background: #1d4ed8; }
     footer { padding: 25px; color: #64748b; text-align: center; }
   </style>
@@ -133,6 +137,24 @@
         <h4>Skrypt do zajęć i pliki do ćwiczeń:</h4>
         <a class="button" href="prezentacje/Python1.pdf" target="_blank">Otwórz skrypt</a>
         <a class="button" href="dane/Python1/dane.zip" target="_blank">Pobierz dane</a>
+        <details>
+          <summary>Instrukcja wysyłania rozwiązań</summary>
+          <div>
+            <p>Użyj dowolnego przycisku, aby wysłać rozwiązania (pliki .py)</p>
+            <a class="button" 
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=k.gebusia@uczelniakorczaka.pl&su=Python%20I%20-%20Praca%20na%20lekcji%20-%20[Twoje%20Imi%C4%99%20i%20Nazwisko]" 
+              target="_blank">
+              Wyślij w Gmail
+            </a>
+            <a class="button button-secondary" 
+               href="mailto:k.gebusia@uczelniakorczaka.pl?subject=Python%20I%20-%20Praca%20na%20lekcji%20-%20[Twoje%20Imi%C4%99%20i%20Nazwisko]">
+               Otwórz w aplikacji poczty
+            </a>
+            <p>Jeśli przyciski nie działają, wyślij e-mail ręcznie:</p>
+            <p>Adres: <strong>k.gebusia@uczelniakorczaka.pl</strong></p>
+            <p>Temat: <strong>Python I - Praca na lekcji - [Twoje Imię i Nazwisko]</strong></p>
+          </div>
+        </details>
       </article>
       
     </section>

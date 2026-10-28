@@ -4,51 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Informatyka Matura — prezentacje</title>
-  <style>
-    :root { --navy: #14213d; --blue: #2563eb; --light: #f4f7fb; --text: #1f2937; }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: Arial, sans-serif; color: var(--text); background: var(--light); line-height: 1.4; }
-    header { padding: 64px 20px 76px; color: white; text-align: center; background: linear-gradient(135deg, #14213d, #2563eb); }
-    header h1 { margin: 0 0 12px; font-size: clamp(2rem, 5vw, 3.5rem); }
-    header p { margin: 0; font-size: 1.15rem; opacity: .9; }
-    main { max-width: 1100px; margin: -35px auto 50px; padding: 0 20px; }
-    .intro, .announcements, .card { background: white; border-radius: 14px; box-shadow: 0 8px 24px #14213d14; }
-    .intro { padding: 26px; margin-bottom: 30px; text-align: center; }
-    .intro h2 { margin-top: 0; }
-    .announcements { padding: 26px; margin-bottom: 30px; text-align: center; }
-    .announcements h2 { margin-top: 0; }
-    .announcements .important { color: #991200; font-weight: bold; }
-
-    .announcements details {
-  /* background: #f9f9f9; */
-  background: #e8f3ff;
-  border: 1px solid rgb(160, 176, 255);
-  border-radius: 6px;
-  padding: 10px 15px;
-  margin-bottom: 10px;
-}
-
-.announcements summary {
-  cursor: pointer;
-  font-size: 1.05rem;
-  color: #333;
-}
-
-.announcements details[open] summary {
-  margin-bottom: 10px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 8px;
-}
-    .presentations { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 20px; }
-    .card { padding: 24px; border-top: 4px solid var(--blue); }
-    .card h3 { margin: 0 0 10px; color: var(--navy); }
-    .card p { min-height: 48px; color: #64748b; margin-bottom: 10px; }
-    .card summary { cursor: pointer; color: var(--blue); font-weight: bold; margin-top: 10px; border-top: 1px solid #ddd; padding-top: 8px; }
-    .card details p { margin: 5px 0 0 0; min-height: 0;}
-    .button { display: inline-block; width: 100%; text-align: center; padding: 11px 16px; margin: 10px 0 0; color: white; background: var(--blue); border-radius: 8px; text-decoration: none; font-weight: bold; }
-    .button:hover { background: #1d4ed8; }
-    footer { padding: 25px; color: #64748b; text-align: center; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -99,7 +55,7 @@
     <section class="intro">
       <h2>Materiały do zajęć</h2>
       <p>Znajdziecie tutaj prezentacje i skrypty do zajęć. Jeśli na lekcji wykorzystujemy dodatkowe pliki, będą one dostępne w kafelku odpowiadającym tematowi zajęć. Jeśli zapomniałem czegoś udostępnić piszcie śmiało na mojego maila <u>k.gebusia@uczelniakorczaka.pl</u></p>
-      <p style="font-size: 1.15rem; color: #991200;">
+      <p class="reminder">
         Pamiętajcie o regularnym powtarzaniu materiału!<br>
       </p>
     </section>
